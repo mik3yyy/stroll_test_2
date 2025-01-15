@@ -1,0 +1,68 @@
+name: stroll_test
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  go_router: ^14.4.1
+  hive_flutter: ^1.1.0
+  gap: ^3.0.1
+  loading_animation_widget: ^1.3.0
+  smooth_page_indicator: ^1.2.0+3
+  cached_network_image: ^3.4.1
+  permission_handler:
+  equatable: ^2.0.5
+  flutter_gen: ^5.8.0
+  dio: ^5.7.0
+  auto_size_text: ^3.0.0
+  fade_shimmer: ^2.2.0
+  dartz: ^0.10.1
+  flutter_dotenv: ^5.2.1
+  flutter_bloc: ^9.0.0
+  get_it: ^8.0.3
+  bloc: ^9.0.0
+  cupertino_icons: ^1.0.8
+  overflow_text_animated: ^0.0.6
+  flutter_svg: ^2.0.17
+  badges: ^3.1.2
+  audio_waveforms: ^1.2.0
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner:
+  flutter_lints: ^3.0.0
+
+  hive_generator:
+  flutter_gen_runner:
+
+
+flutter_gen:
+  output: lib/core/gen/
+
+  integrations:
+    flutter_svg: true
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - application/assets/images/
+    - application/assets/fonts/
+ 
+
+  fonts:
+    - family: Nova
+      fonts:
+        - asset: application/assets/fonts/ProximaNova-Regular.otf
+        
+
+
