@@ -99,7 +99,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: Column(
         children: [
-          Container(
+          SizedBox(
               child: Stack(
             children: [
               Positioned.fill(
@@ -285,7 +285,7 @@ class _HomePageState extends State<HomePage> {
                       final formattedDuration = formatDuration(duration);
                       return AnimatedOpacity(
                         opacity: audioState == AudioState.none ? 0.5 : 1,
-                        duration: Duration(milliseconds: 500),
+                        duration: const Duration(milliseconds: 500),
                         child: Text(
                           formattedDuration,
                           style: context.textTheme.bodyMedium?.copyWith(
